@@ -36,10 +36,18 @@ board[index] = symbol
 
 end
 #turn
-   #asks the user for input by printing: "Please enter 1-9:" (FAILED - 3)
-   #gets the user input (FAILED - 4)
-   #calls the input_to_index method (FAILED - 5)
-   #validates the input correctly (FAILED - 6)
-   #asks for input again after a failed validation (FAILED - 7)
-   #makes valid moves (FAILED - 8)
-   #displays a correct board after a valid turn (FAILED - 9)
+def turn(board)
+  puts "Please enter 1-9:"
+    userInput = gets.strip 
+    # gets input and calls input_to_index
+    index = input_to_index(userInput)
+    if !valid_move?(board, index) 
+      # asks for input again after a failed validation
+      turn(board)
+    else # makes valid moves
+      move(board, index, current_player(board))
+    end
+  display_board(board)
+end
+   
+   #displays a correct board after a valid turn 
