@@ -31,7 +31,7 @@ def position_taken?(board, index)
  end
 end
 #move allows "X" player in the bottom right and "O" in the top left
-def move(board, Index, "X")
+def move(board, Index, X)
 board[index] = X
 
 end
