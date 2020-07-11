@@ -28,8 +28,8 @@ def position_taken?(board, index)
   	false
   else
    true
-
-  end
+ end
+end
 #move allows "X" player in the bottom right and "O" in the top left
 
 #turn
