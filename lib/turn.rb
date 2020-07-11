@@ -36,7 +36,7 @@ board[index] = symbol
 
 end
 #turn
-def turn(board)
+def turn
   puts "Please enter 1-9:"
     userInput = gets.strip
     # gets input and calls input_to_index
