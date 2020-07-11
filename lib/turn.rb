@@ -31,7 +31,10 @@ def position_taken?(board, index)
  end
 end
 #move allows "X" player in the bottom right and "O" in the top left
+def move(board, Index, "X")
+board[index] = X
 
+end
 #turn
    #asks the user for input by printing: "Please enter 1-9:" (FAILED - 3)
    #gets the user input (FAILED - 4)
