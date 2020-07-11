@@ -47,7 +47,7 @@ def turn(board)
       # asks for input again after a failed validation
       turn(board)
     else # makes valid moves
-      move(board, index, character)
+      move(board, index, character = "X")
     end
   display_board(board)
 end
