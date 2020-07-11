@@ -40,8 +40,3 @@ def position_taken?(board, index)
    #asks for input again after a failed validation (FAILED - 7)
    #makes valid moves (FAILED - 8)
    #displays a correct board after a valid turn (FAILED - 9)
-
-
-
-
-#
