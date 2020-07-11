@@ -38,10 +38,10 @@ end
 #turn
 def turn(board)
   puts "Please enter 1-9:"
-    userInput = gets.strip 
+    userInput = gets.strip
     # gets input and calls input_to_index
     index = input_to_index(userInput)
-    if !valid_move?(board, index) 
+    if !valid_move?(board, index)
       # asks for input again after a failed validation
       turn(board)
     else # makes valid moves
@@ -49,5 +49,5 @@ def turn(board)
     end
   display_board(board)
 end
-   
-   #displays a correct board after a valid turn 
+
+   #displays a correct board after a valid turn
